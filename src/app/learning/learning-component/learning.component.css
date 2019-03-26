@@ -1,0 +1,19 @@
+nav a {
+    padding: 5px 10px;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-left: 10px;
+    display: inline-block;
+    background-color: rgba(36, 153, 46, 0.301);
+    border-radius: 4px;
+}
+nav a:visited, a:link {
+    color: rgb(28, 68, 88);
+}
+nav a:hover {
+    color: #c018b2;
+    background-color: #CFD8DC;
+}
+nav a.active {
+    color: #039be5;
+}

@@ -1,0 +1,19 @@
+<thead>
+  <th *ngFor="let header of headersList">
+    {{ header }}
+  </th>
+</thead>
+<tbody>
+  <tr *ngFor="let student of students">
+    <td>{{ student.firstName }}</td>
+    <td>{{ student.lastName }}</td>
+    <td>{{ student.phone }}</td>
+    <td>{{ student.email }}</td>
+    <td><app-course-name [courseIds]="student.courseIds"></app-course-name></td>
+    <td>
+      <div>
+        <button class="edit" (click)="viewStudentComponent.editStudent(student.studentId)">Edit</button>
+      </div>
+    </td>
+  </tr>
+</tbody>

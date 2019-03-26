@@ -1,0 +1,8 @@
+<app-rest-api></app-rest-api>
+<div class="alignCenter">
+    <h2>{{ title }}</h2>
+    <app-course-input-fields [course]="course"></app-course-input-fields>
+    <button (click)="update()">{{ updateButton }}</button>
+    <button (click)="delete(course.courseId)">{{ deleteButton }}</button>
+    <button (click)="back()">{{ backButton }}</button>
+</div>

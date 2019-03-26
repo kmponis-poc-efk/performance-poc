@@ -1,0 +1,7 @@
+<div class="alignCenter">
+    <div class="distance">First Name: <input type="text" [(ngModel)]="student.firstName"></div>
+    <div class="distance">Last Name: <input type="text" [(ngModel)]="student.lastName"></div>
+    <div class="distance">Phone: <input type="text" [(ngModel)]="student.phone"></div>
+    <div class="distance">Email: <input type="text" [(ngModel)]="student.email"></div>
+    <div class="distance">Course: <app-course-dropdown [student]="student" [courses]="courses" [numberOfCourses]="student.courseIds"></app-course-dropdown></div>
+</div>

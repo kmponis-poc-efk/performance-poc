@@ -1,0 +1,10 @@
+<app-rest-api></app-rest-api>
+<div class="alignCenter">
+    <h2>{{ title }}</h2>
+    <p>
+        <button (click)="addCourse()">Add cousre</button>
+        <input type="text" [(ngModel)]="searchCourseInput">
+        <button (click)="searchCourse()" title="If empty it finds all!">Search (By name)</button>
+    </p>
+    <app-course-table [courses]="courses"></app-course-table>
+</div>

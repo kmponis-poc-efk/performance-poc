@@ -1,0 +1,11 @@
+<b *ngFor="let item of numberOfCourses; let i = index">
+    <br *ngIf="i>0">
+    <select [(ngModel)]="student.courseIds[i]">  
+        <!-- <option selected="" value=""></option> -->
+        <option *ngFor="let course of courses" [ngValue]="course.courseId">  
+            {{ course.name }}  
+        </option>
+    </select>
+    <img *ngIf="i==0 && student.courseIds[numberOfCourses.length-1]" (click)="addCourse()" src="assets/images/plus.png">
+    <img *ngIf="i==0 && numberOfCourses.length>1" (click)="deleteCourse()" src="assets/images/minus.png">
+</b>

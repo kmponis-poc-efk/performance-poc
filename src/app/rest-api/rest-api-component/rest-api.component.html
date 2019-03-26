@@ -1,0 +1,7 @@
+<div class="alignCenter">
+  <nav>
+    <a *ngIf="getSessionUser()=='admin'" routerLink="/restApi/admin">{{ adminLink }}</a>
+    <a routerLink="/restApi/student">{{ studentLink }}</a>
+    <a *ngIf="getSessionUser()=='admin' || getSessionUser()=='professor'" routerLink="/restApi/course">{{ courseLink }}</a>
+  </nav>
+</div>
